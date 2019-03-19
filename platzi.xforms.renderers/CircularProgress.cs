@@ -54,9 +54,9 @@ namespace platzi.xforms.renderers
         public static readonly BindableProperty ProgressBackgroundColorProperty =
             BindableProperty.Create("ProgressBackgroundColor", typeof(Color), typeof(CircularProgress), Color.White);
 
-        public bool ProgressBackgroundColor
+        public Color ProgressBackgroundColor
         {
-            get { return (bool)GetValue(ProgressBackgroundColorProperty); }
+            get { return (Color)GetValue(ProgressBackgroundColorProperty); }
             set { SetValue(ProgressBackgroundColorProperty, value); }
         }
 
@@ -64,9 +64,9 @@ namespace platzi.xforms.renderers
         public static readonly BindableProperty ProgressColorProperty =
             BindableProperty.Create("ProgressColor", typeof(Color), typeof(CircularProgress), Color.Red);
 
-        public bool ProgressColor
+        public Color ProgressColor
         {
-            get { return (bool)GetValue(ProgressColorProperty); }
+            get { return (Color)GetValue(ProgressColorProperty); }
             set { SetValue(ProgressColorProperty, value); }
         }
     }
